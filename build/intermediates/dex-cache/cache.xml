@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-bca9cd8c8082330ef7549e0398af852faae531fd.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/codepath-utils-76c4960e7f47091735fd870b2db0671ccd85bdc9.jar"
+        jar="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/libs/codepath-utils.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-27fe48b8971505e050a9ff8f665b988e2de756f9.jar"
+        jar="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/scribe-codepath-9066d9c703742421c63dd4e542abd851a4a23f46.jar"
+        jar="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/libs/scribe-codepath.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6e0748acc9e7be0695de0d38016d260df52d9167"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/codepath-oauth-0.3.0-83019d1ea534c9a8a341dec67d582cb67c69138b.jar"
+        jar="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/libs/codepath-oauth-0.3.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b90f1c3541987f690e2fb854775914cc23266250"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/butterknife-5.1.2-d7abfba21c6a62f8a5ece8e00671e9a2400432f0.jar"
+        jar="/Users/rcarino/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/5.1.2/daf5472b0df6dabaceb6ad755b3812535863965a/butterknife-5.1.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="daf5472b0df6dabaceb6ad755b3812535863965a"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/ActiveAndroid-3.1-adcddac4c58-9c6b2d587b9e05cd1890a7391309a81b8b5dc01f.jar"
+        jar="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/libs/ActiveAndroid-3.1-adcddac4c58.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e550c03ed8bcfe3b9f97d8c5ce6e8ee305f3beed"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/prettytime-3.2.5.Final-ae82871b8bfd109da45c72aae46227b06031652b.jar"
+        jar="/Users/rcarino/.gradle/caches/modules-2/files-2.1/org.ocpsoft.prettytime/prettytime/3.2.5.Final/84f05b7911e736cd6913301e90bab3fbaa2f40da/prettytime-3.2.5.Final.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="84f05b7911e736cd6913301e90bab3fbaa2f40da"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-81dd852052356daf4d81e8c1cee4c08d9f9c5c76.jar"
+        jar="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/libs/universal-image-loader-1.8.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="eee81e43531ce82db1781c5a8b27781ca384eede"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.3-c2e8224604c2f83a5e4a33557bec58249772c204.jar"
+        jar="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/libs/android-async-http-1.4.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f70e680861fdf9449819003e7799a4e9aca047f8"/>
+    <item
+        dex="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/pre-dexed/debug/classes-5759cdcda9532a12d2e6ef0c947dff4319518978.jar"
+        jar="/Users/rcarino/Personal_projects/SimpleTwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+
+</pre-dex-items>

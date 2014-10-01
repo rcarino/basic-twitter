@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.codepath.apps.basictwitter.activities.ComposeTweetActivity" >
+</menu>
+<!-- From: file:/Users/rcarino/Personal_projects/SimpleTwitterClient/app/src/main/res/menu/compose_tweet.xml -->
