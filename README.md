@@ -5,24 +5,18 @@ Time spent: 15 hours spent in total
 
 Completed user stories:
 
- * [x] Required: User can view a list of latest box office movies including title, cast and tomatoes rating
- * [x] Required: User can click on a movie in the list to bring up a details page with additional information such as synopsis
-    * [x] Required: User should be displayed the username, name, and body for each tweet
-    * [x] Required: User should be displayed the relative timestamp for each tweet "8m", "7h"
-    * [x] Required: User should be displayed the relative timestamp for each tweet "8m", "7h"
-    * [x] Optional: Links in tweets are clickable and will launch the web browser (see autolink)
- * [x] Required: User can compose a new tweet
-    * [x] Required: User can click a “Compose” icon in the Action Bar on the top right
-    * [x] Required: User can then enter a new tweet and post this to twitter
-    * [x] Required: User is taken back to home timeline with new tweet visible in timeline
-    * [x] Optional: User can see a counter with total number of characters left for tweet
- * [x] Advanced: User can refresh tweets timeline by pulling down to refresh (i.e pull-to-refresh)
- * [x] Advanced: User can open the twitter app offline and see last loaded tweets
- * [x] Advanced: Improve the user interface and theme the app to feel "twitter branded"
+ * [x] Required: Includes all required user stories from Week 3 Twitter Client
+ * [x] Required: User can switch between Timeline and Mention views using tabs.
+ * [x] Required: User can navigate to view their own profile
+ * [x] Required: User can click on the profile image in any tweet to see another user's profile.
 
-Notes:
-Bulk of time went into debugging active android. Couldn't get foreign keys to behave properly, so ended up
-manually coding logic to avoid inserting duplicates.
+ * [x] Advanced: Robust error handling, check if internet is available, handle error cases, network failures
+ * [x] Advanced: When a network request is sent, user sees an indeterminate progress indicator
+ * [x] Advanced: User can "reply" to any tweet on their home timeline
+ * [x] Advanced: User can click on a tweet to be taken to a "detail view" of that tweet
+ * [x] Advanced: Improve the user interface and theme the app to feel "twitter branded"
+ * [x] Advanced: User can search for tweets matching a particular query and see results
+
 
 Walkthrough of all user stories:
 
