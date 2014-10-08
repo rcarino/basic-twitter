@@ -1,6 +1,5 @@
 package com.codepath.apps.basictwitter.activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -15,28 +14,32 @@ import android.widget.Toast;
 import com.codepath.apps.basictwitter.R;
 import com.codepath.apps.basictwitter.models.Tweet;
 import com.codepath.apps.basictwitter.models.User;
-import com.codepath.apps.basictwitter.utilities.TwitterApplication;
-import com.codepath.apps.basictwitter.utilities.TwitterClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONObject;
 
-import java.util.Date;
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
-public class ComposeTweetActivity extends Activity {
+public class ComposeTweetActivity extends BaseTwitterActivity {
+
+    @InjectView(R.id.etTweetBody)
+    EditText etTweetBody;
+    @InjectView(R.id.tvCharacterCount)
+    TextView tvCharacterCount;
+
     private User currentUser;
-    private EditText etTweetBody;
-    private TextView tvCharacterCount;
-    private TwitterClient client;
+    private String replyToId;
+    private String replyToScreenName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compose_tweet);
-        client = TwitterApplication.getRestClient();
+        ButterKnife.inject(this);
 
-        tvCharacterCount = (TextView) findViewById(R.id.tvCharacterCount);
-        etTweetBody = (EditText) findViewById(R.id.etTweetBody);
+        setupEditTextReply(etTweetBody);
+
         etTweetBody.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
@@ -81,25 +84,6 @@ public class ComposeTweetActivity extends Activity {
     }
 
     public void submitTweet(View button) {
-        String tweetBody = etTweetBody.getText().toString();
-
-        client.submitTweet(new JsonHttpResponseHandler() {
-            @Override
-            public void onSuccess(JSONObject jsonObject) {
-                Tweet newTweet = Tweet.fromJSON(jsonObject);
-                newTweet.save();
-                Intent response = new Intent();
-                response.putExtra("newTweet", newTweet);
-
-                setResult(RESULT_OK, response);
-                finish();
-            }
-
-            @Override
-            public void onFailure(Throwable throwable, JSONObject jsonObject) {
-                throwable.printStackTrace();
-                Toast.makeText(getApplicationContext(), "Failed to submit new tweet", Toast.LENGTH_SHORT).show();
-            }
-        }, tweetBody);
+        handleTweetSubmission(etTweetBody.getText().toString());
     }
 }

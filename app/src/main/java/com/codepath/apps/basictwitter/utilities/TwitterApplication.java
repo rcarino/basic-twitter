@@ -25,6 +25,7 @@ import butterknife.ButterKnife;
  */
 public class TwitterApplication extends com.activeandroid.app.Application {
 	private static Context context;
+    private static User currentUser;
 
 	@Override
 	public void onCreate() {
@@ -44,10 +45,16 @@ public class TwitterApplication extends com.activeandroid.app.Application {
 		return (TwitterClient) TwitterClient.getInstance(TwitterClient.class, TwitterApplication.context);
 	}
 
-    private Boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting();
+    public static User getCurrentUser() {
+        return currentUser;
+    }
+
+    public static void setCurrentUser() {
+        getRestClient().getCurrentUser(new JsonHttpResponseHandler() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                currentUser = User.fromJSON(jsonObject);
+            }
+        });
     }
 }

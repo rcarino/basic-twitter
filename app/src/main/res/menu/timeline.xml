@@ -2,8 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.codepath.apps.basictwitter.activities.TimelineActivity">
     <item
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_search"
+        android:showAsAction="always"
+        android:id="@+id/action_search"
+        android:title="Search"></item>
+    <item
         android:icon="@drawable/ic_compose"
         android:onClick="openComposeTweetActivity"
         android:showAsAction="always"
         android:title="Compose" />
+    <item
+        android:icon="@drawable/ic_profile"
+        android:onClick="viewProfile"
+        android:showAsAction="always"
+        android:title="Profile"></item>
 </menu>

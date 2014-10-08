@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -11,12 +12,13 @@ import android.widget.TextView;
 import com.codepath.apps.basictwitter.R;
 import com.codepath.apps.basictwitter.models.Tweet;
 import com.codepath.apps.basictwitter.models.User;
+import com.codepath.apps.basictwitter.utilities.AttachmentRenderer;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class TweetDetailActivity extends Activity {
+public class TweetDetailActivity extends BaseTwitterActivity {
     @InjectView(R.id.ivProfileImage)
     ImageView ivProfileImage;
 
@@ -41,8 +43,10 @@ public class TweetDetailActivity extends Activity {
         setContentView(R.layout.activity_tweet_detail);
         ButterKnife.inject(this);
 
-        Tweet clickedTweet = (Tweet) getIntent().getSerializableExtra("clickedTweet");
+        Tweet clickedTweet = (Tweet) getIntent().getParcelableExtra("clickedTweet");
         populateViews(clickedTweet);
+        AttachmentRenderer.renderAttachment(clickedTweet, ivAttachment);
+        setupEditTextReply(etReply);
     }
 
     private void populateViews(Tweet tweet) {
@@ -52,7 +56,7 @@ public class TweetDetailActivity extends Activity {
         ImageLoader.getInstance().displayImage(user.getProfileImageUrl(), ivProfileImage);
 
         tvFullName.setText(user.getName());
-        tvUserName.setText(user.getScreenName());
+        tvUserName.setText("@" + user.getScreenName());
         tvBody.setText(tweet.getBody());
     }
 
@@ -74,5 +78,9 @@ public class TweetDetailActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void submitTweet(View button) {
+        handleTweetSubmission(etReply.getText().toString());
     }
 }

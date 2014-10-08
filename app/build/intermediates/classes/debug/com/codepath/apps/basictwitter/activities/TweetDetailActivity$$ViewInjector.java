@@ -9,15 +9,15 @@ public class TweetDetailActivity$$ViewInjector {
     View view;
     view = finder.findRequiredView(source, 2131230726, "field 'ivProfileImage'");
     target.ivProfileImage = (android.widget.ImageView) view;
-    view = finder.findRequiredView(source, 2131230727, "field 'tvFullName'");
+    view = finder.findRequiredView(source, 2131230735, "field 'tvFullName'");
     target.tvFullName = (android.widget.TextView) view;
-    view = finder.findRequiredView(source, 2131230728, "field 'tvUserName'");
+    view = finder.findRequiredView(source, 2131230736, "field 'tvUserName'");
     target.tvUserName = (android.widget.TextView) view;
-    view = finder.findRequiredView(source, 2131230729, "field 'tvBody'");
+    view = finder.findRequiredView(source, 2131230737, "field 'tvBody'");
     target.tvBody = (android.widget.TextView) view;
-    view = finder.findRequiredView(source, 2131230730, "field 'ivAttachment'");
+    view = finder.findRequiredView(source, 2131230738, "field 'ivAttachment'");
     target.ivAttachment = (android.widget.ImageView) view;
-    view = finder.findRequiredView(source, 2131230731, "field 'etReply'");
+    view = finder.findRequiredView(source, 2131230739, "field 'etReply'");
     target.etReply = (android.widget.EditText) view;
   }
 
